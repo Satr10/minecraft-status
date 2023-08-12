@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: #1D1F20;
+}
+#box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height:auto;
+  color: white;
+  font-family: 'Raleway';
+  font-size: 1.5rem;
+}
+.container {
+    min-height: 80%;
+    line-height: 0.5;
+  flex-direction: column;
+  --borderWidth: 5px;
+  background: #1D1F20;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+a {
+    line-height: 1.5;
+}
+.container:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+footer {
+  font-family: 'Raleway';
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  padding: 0.2rem;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
