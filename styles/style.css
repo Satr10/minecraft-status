@@ -13,16 +13,16 @@ body {
 #box {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   width: auto;
   height:auto;
   color: white;
   font-family: 'Raleway';
   font-size: 1.5rem;
 }
+
 .container {
-    min-height: 80%;
-    line-height: 0.5;
+  min-height: 80%;
   flex-direction: column;
   --borderWidth: 5px;
   background: #1D1F20;
